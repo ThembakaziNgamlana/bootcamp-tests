@@ -10,4 +10,12 @@ describe('Test regCheck function' , function(){
         assert.equal(regCheck('ERT 123 EC', 'GP'), false);
         assert.equal(regCheck('FGT 123 MM', 'MP'), false);
     });
+
+    it("should return false if there is no registration number  enterted and is  empty string", function(){
+        assert.equal(false ,regCheck(","))
+    });
+
+
+
+    
 });

@@ -7,7 +7,7 @@ describe('yearsAgo', function(){
         assert.equal(yearsAgo(2000), 23) ;
         assert.equal(yearsAgo(1976), 47) ;
     });
-    it("it should return none when no year is enterted", function(){
+    it("it should return zero when no year is enterted", function(){
       //const currentMonth = new Date().getMonth()
       assert.equal(yearsAgo(2023), 0);
     });

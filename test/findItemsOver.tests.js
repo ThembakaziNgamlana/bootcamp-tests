@@ -30,7 +30,7 @@ describe('Test findItemsOver function' , function(){
       assert.deepEqual([],findItemsOver(itemList2, 100));
     });
 
-    it("should   one item that is greater than threshold", function(){
+    it("should  return one item that is greater than threshold", function(){
         var itemList3 = [
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 20},

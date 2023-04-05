@@ -3,11 +3,11 @@ describe('Test countRegNumber function' , function(){
         var regCount = countRegNumber('CA 182736,CY 523519,CJ 812328')
         assert.equal(regCount, 3);
     });
-    it("should return one if the there is one registation number", function(){
+    it("should return one if there is one registation number", function(){
         var regCount = countRegNumber('CA 182736')
         assert.equal(regCount, 1);
     });
-    it("should return zero when there is no registation number enterted", function(){
+    it("should return one when a string  is empty no registration number entered", function(){
         var regCount = countRegNumber("");
         assert.equal(regCount,1);
     });
